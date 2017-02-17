@@ -14,8 +14,8 @@ class helloController extends Controller
 }
 public function add(Request $request)
 {
-
-$result=$request->number1 +$request->number2;
-return view('sum',['sum'=>$result]);
+$result1=$request->number1 +$request->number2;
+$result=$request->number1 *$request->number2;
+return view('sum',['sum'=>$result1,'prod'=>$result]);
 }
 }
